@@ -25,6 +25,8 @@ void history_item_test(void)
 {
     history_item_t tHistory, *ptHistoryPtr;
     int j = HISTORY_ITEM_MAX_COUNT - 1;
+    
+    init_history();
 
     printf("History Item Max Count -> %d\r\n", HISTORY_ITEM_MAX_COUNT);
     printf("--------------------------------------\r\n");
