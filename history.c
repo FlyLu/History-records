@@ -159,6 +159,6 @@ history_item_t *get_newest_history_item(void)
 void reset_history_item(void)
 {
     s_tHistoryManage.ReadCount = s_tHistoryManage.SaveCount;
-    s_tHistoryManage.ReadIndex = s_tHistoryManage.SaveIndex;
+    s_tHistoryManage.ReadIndex = s_tHistoryManage.SaveIndex - 1;
 }
 /* EOF */
