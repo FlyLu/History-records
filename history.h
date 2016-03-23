@@ -25,8 +25,6 @@
 #include <stdbool.h>
 
 /*============================ MACROS ========================================*/
-#define WEAK    __weak
-
 /*============================ MACROFIED FUNCTIONS ===========================*/
 /*============================ TYPES =========================================*/
 #define HISTORY_ITEM_MAX_COUNT        5
@@ -91,6 +89,12 @@ extern history_item_t *get_oldest_history_item(void);
  */ 
 extern history_item_t *get_newest_history_item(void);
 
+
+/*! \brief reset history item index
+ *! \param none
+ *! \return none
+ */ 
+extern void reset_history_item(void);
 /*============================ IMPLEMENTATION ================================*/
 #endif 
 /* EOF */
